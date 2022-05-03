@@ -1,0 +1,401 @@
+* {
+    margin: 1px;
+    padding: 1px;
+}
+
+body { 
+    background-color: white;
+    color: rgba(92, 8, 8, 0.753);
+    width: 95vw;
+
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "nav" 
+    "main"
+    "footer";
+    grid-gap: 1px;
+
+}
+header{
+    grid-area: header;
+}
+.header{
+    color: rgba(92, 8, 8, 0.753);
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 2px;
+    margin: 2px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.header-logo {
+    width: 120px;
+    height: 50px;
+    padding: 10px 0px;
+    align-items: initial;
+    
+}
+.header-slogan{
+    align-items: initial;
+    color: rgba(92, 8, 8, 0.753);
+    font-size: 15px;
+    padding: 10px 0px;
+}
+nav{
+    background-image: url(../Imagenes/floor-tile.png);
+    text-align: start;
+    grid-area: nav;
+    
+
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    flex-direction: start;
+    justify-content: space-evenly;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: rgba(92, 8, 8, 0.753);
+}
+.menu li{
+    padding: 0px;
+    margin: 0px;
+    font-size: 11px;
+    
+}
+.menu ul{ 
+    margin: 0px;
+}
+main{ 
+    grid-area: main;
+    margin: 1px;
+    padding: 1px;
+}
+.hist{
+    font-style: italic;
+    font-family: 'Anek Tamil', sans-serif;  
+    display: flex;
+    flex-direction: column; 
+    flex-wrap: wrap;
+    padding: 0px;
+    background-color: beige;
+    
+}
+
+.hist-1 {
+    display: flex;
+    flex-direction: column;
+    position: left;
+    font-size: 10px;
+
+}
+
+.nov .prom {
+    border: solid;
+    color: rgba(92, 8, 8, 0.753);
+    background-color: beige;
+    font-size: 10px;
+
+}
+
+span {
+    color: rgba(92, 8, 8, 0.753);
+}
+
+
+.image {
+    width: 100px;
+    position: left;
+
+}
+div p {
+    color: black; 
+    font-style: italic;
+    font-size: 12px;
+    
+}
+
+footer{
+    padding: 0px;
+    border: inset;
+    color: black;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 10px;
+    color:rgba(92, 8, 8, 0.753);
+    background-image: url(../Imagenes/floor-tile.png);
+    grid-area: footer;
+}
+footer li{
+    display: inline;
+}
+.geo {
+    width: 280px;
+    height: 100px;
+}
+
+.fb{ 
+    width: 20px;
+    height: 20px;
+}
+
+.wp{
+    width: 20px;
+    height: 20px;
+}
+
+#producto img {
+    width: 80px;
+    height: 80px;
+}
+
+#producto div{
+    display: inline-block;
+    order: initial;
+    padding: 0 20px;
+    background-color: beige;
+}
+
+.p1 .p2 .p3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+ .contenedor {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: beige;
+    color: black;
+}
+
+.video{
+    width: 250px;
+    height: auto;
+}
+.como {
+    color: rgba(92, 8, 8, 0.753);
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+}
+.orden{
+    color: black;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 12px;
+}
+
+.contact-form{
+    background-color: beige;
+    width: 200px;
+    height: 100px;
+    font-size: 11px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 70px 0px;
+
+}
+.enviar {
+    width: 100px;
+}
+
+@media screen and (min-width:768px) {
+
+    body {  
+        display: grid;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "footer";
+    grid-gap: 10px;
+    margin: 10px 10px;
+    padding: 1px 1px;
+    }
+    
+    
+    .header-logo {
+        width: 150px;
+        height: 70px;
+        
+        
+    }
+    .header-slogan{
+        font-size: 30px;
+    }
+    .menu li{
+        font-size: 20px;
+    }
+
+    .geo {
+        width: 350px;
+        height: 120px;
+    }
+    
+    .fb{ 
+        width: 30px;
+        height: 30px;
+    }
+    
+    .wp{
+        width: 30px;
+        height: 30px;
+    }
+    .hist{
+        display: grid;
+        grid-template-areas: 
+        "hist-1 hist-2";
+    }
+    .hist-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        grid-area: hist-1;
+        font-size: 18px;
+    }
+    
+    .hist-2 {
+        grid-area: hist-2;
+        justify-content: center;
+        }
+    .image{
+            width: 130px;
+        }
+    
+    .nov .prom {
+        border: solid;
+        color: rgba(92, 8, 8, 0.753);
+        background-color: beige;
+        font-size: 10px;
+    
+    }
+    
+    div p {
+        color: black; 
+        font-style: italic;
+        font-size: 18px;
+        
+    }
+
+    #producto img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .contenedor {
+        display: grid;
+        grid-template-areas: 
+        "como como"
+        "orden video";
+        
+    }
+    
+    .video{
+        width: 350px;
+        height: 270px;
+        grid-area: video;
+    }
+    .como {
+        font-size: 22px;
+        grid-area: como;
+    }
+    .orden{
+        grid-area: orden;
+        font-size: 20px;
+    }
+
+}
+@media screen and (min-width:1024px) {
+    
+    body {  
+        display: grid;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "footer";
+    grid-gap: 10px;
+    margin: 25px 25px;
+    padding: 2px 2px;
+    }
+    .header{    
+        padding: 10px;
+        margin: 10px;
+
+        
+    }
+    
+    .header-logo {
+        width: 250px;
+        height: 100px;
+        align-items: initial;
+        
+    }
+    .header-slogan{
+     
+        font-size: 50px;
+    }
+    .menu li{
+        font-size: 25px;
+        padding: 0px 5px;
+        transition: all .3seg ease-in-out;
+    }
+    .menu li:hover {
+        font-size: 30px;
+        color: black;    
+        
+    }
+   
+    .hist-1{
+        font-size: 25px;
+    }
+    .geo {
+        width: 420px;
+        height: 200px;
+    }
+    
+    .fb{ 
+        width: 40px;
+        height: 40px;
+    }
+    
+    .wp{
+        width: 40px;
+        height: 40px;
+    }
+    div p {
+        font-size: 25px;
+
+    }
+    .image{
+        width: 200px;
+    }
+    #producto img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .video{
+        width: 400px;
+        height: 300px;
+        grid-area: video;
+    }
+    .como {
+        font-size: 22px;
+        grid-area: como;
+    }
+    .orden{
+        grid-area: orden;
+        font-size: 20px;
+    }
+    
+}
